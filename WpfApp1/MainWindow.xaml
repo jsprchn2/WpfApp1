@@ -7,19 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="Main_Grid">
-        <TextBox x:Name="Search_Box" HorizontalAlignment="Left" Height="30" Margin="22,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="186"/>
-        <Button x:Name="Search_Button" Content="Search" HorizontalAlignment="Left" Height="30" Margin="235,10,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click"/>
-        <Button x:Name="All_Stock" Content="View All Stock" HorizontalAlignment="Left" Height="30" Margin="235,379,0,0" VerticalAlignment="Top" Width="100"/>
-        <Button x:Name="Portfolio_Button" Content="View Portfolio" HorizontalAlignment="Left" Height="30" Margin="388,379,0,0" VerticalAlignment="Top" Width="100"/>
-        <ListView x:Name="StockList" HorizontalAlignment="Left" Height="329" Margin="22,45,0,0" VerticalAlignment="Top" Width="760" SelectionChanged="ListView_SelectionChanged">
+        <TextBox x:Name="Search_Box" HorizontalAlignment="Left" Height="30" Margin="20,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="186"/>
+        <Button x:Name="Search_Button" Content="Search" HorizontalAlignment="Left" Height="30" Margin="220,10,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click"/>
+        <Button x:Name="All_Stock" Content="View All Stock" HorizontalAlignment="Left" Height="30" Margin="200,380,0,0" VerticalAlignment="Top" Width="100" Click="All_Stock_Click"/>
+        <Button x:Name="Portfolio_Button" Content="View Portfolio" HorizontalAlignment="Left" Height="30" Margin="500,380,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5"/>
+        <ListView x:Name="StockList" HorizontalAlignment="Left" Height="330" Margin="20,45,0,0" VerticalAlignment="Top" Width="750" SelectionChanged="ListView_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <WindowsFormsHost x:Name="Select_Stock" HorizontalAlignment="Left" Height="450" Margin="-6,443,-2,-474" VerticalAlignment="Top" Width="800"/>
-        <Grid HorizontalAlignment="Left" Height="450" Margin="-6,443,-2,-474" VerticalAlignment="Top" Width="800"/>
 
     </Grid>
 </Window>
