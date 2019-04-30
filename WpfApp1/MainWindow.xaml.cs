@@ -29,5 +29,35 @@ namespace WpfApp1
         {
 
         }
+
+        private void Search_Box_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Portfolio_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Search_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AddToPortfolio_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AddToPortfolio_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

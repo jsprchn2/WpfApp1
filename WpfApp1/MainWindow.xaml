@@ -7,10 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="Main_Grid">
-        <TextBox x:Name="Search_Box" HorizontalAlignment="Left" Height="30" Margin="20,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="186"/>
-        <Button x:Name="Search_Button" Content="Search" HorizontalAlignment="Left" Height="30" Margin="220,10,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click"/>
+        <TextBox x:Name="Search_Box" HorizontalAlignment="Left" Height="30" Margin="20,10,0,0" TextWrapping="Wrap" Text="Search For" VerticalAlignment="Top" Width="175" TextChanged="Search_Box_TextChanged"/>
         <Button x:Name="All_Stock" Content="View All Stock" HorizontalAlignment="Left" Height="30" Margin="200,380,0,0" VerticalAlignment="Top" Width="100" Click="All_Stock_Click"/>
-        <Button x:Name="Portfolio_Button" Content="View Portfolio" HorizontalAlignment="Left" Height="30" Margin="500,380,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5"/>
+        <Button x:Name="Portfolio_Button" Content="View Portfolio" HorizontalAlignment="Left" Height="30" Margin="500,380,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5" Click="Portfolio_Button_Click"/>
         <ListView x:Name="StockList" HorizontalAlignment="Left" Height="330" Margin="20,45,0,0" VerticalAlignment="Top" Width="750" SelectionChanged="ListView_SelectionChanged">
             <ListView.View>
                 <GridView>
@@ -18,6 +17,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-
+        <Button x:Name="Search_Button" Content="Search" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="210,10,0,0" Height="30" Click="Search_Button_Click"/>
+        <Button x:Name="AddToPortfolio_Button" Content="Add to Portfolio" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="320,10,0,0" Height="30" Click="AddToPortfolio_Button_Click"/>
     </Grid>
 </Window>
